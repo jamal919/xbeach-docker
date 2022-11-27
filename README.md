@@ -15,6 +15,8 @@ docker run --rm -v `pwd`:/mnt jamal919/xbeach xbeach input.txt
 
 If you want to run the docker in interactive mode, add `-it` parameter to your command. In that case `xbeach input.txt` should be issued after getting the prompt from the container.
 
+The container is equipped with mpich and the xbeach code is compiled with mpich and netCDF. Use `mpirun -np <ncore>` to run the commands with MPI in a multiprocessing environment.
+
 # About Xbeach
 (sourced from https://oss.deltares.nl/web/xbeach/about)
 
